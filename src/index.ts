@@ -1,16 +1,32 @@
-let fruitName = "Banana";
-
-let fruit = {
-	name: "Banana",
-	color: "Yellow",
-	seetness: 90,
-	isRipe: true
+function getFruitbasketVerbalCount(fruitList: any) {
+	let verbalFruitCount;
+	if (fruitList.length > 5) {
+		verbalFruitCount = "A lot of fruit.";
+	} else {
+		verbalFruitCount = "Some fruit.";
+	}
+	return verbalFruitCount;
 }
 
-let fruitName2 = ["Apple", "Banana", "Strawberry"];
+let boolma!:string;
 
-const callBack = (name: string) => {
-	return name.length;
-};
+console.log(boolma);
 
-const nameLength = fruitName2.map(callBack);
+let menu: {
+	courses: number;
+	veganOption: boolean;
+	drinkChoices: string[];
+} = {
+	courses: 5,
+	veganOption: true,
+	drinkChoices: ["Sprite", "Coke", "Water"]
+}
+
+const {courses:string} = menu;
+
+async function getFruitlist() {
+	const response = await fetch("https://example.com/fruitList");
+	const fruitList = await response.json();
+	const typeFruuitlist = fruitList;
+	return typeFruuitlist;
+} // we need this function to let our typescript compiler know which type of data we waits from api

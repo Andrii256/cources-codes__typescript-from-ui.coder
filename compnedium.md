@@ -4,3 +4,9 @@
 
 ## tsconfig.json
 "target" if for versions of javascript
+
+
+# type annotation
+is `let myAwesomeString :string = "Cheesecake";`
+
+`let myAwesomeString!: string;`, symbol `!` allows me to avoid typescript error "variablename are used before being assigned"
