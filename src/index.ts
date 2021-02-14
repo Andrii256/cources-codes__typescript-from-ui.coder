@@ -1,5 +1,17 @@
-async function getFruitlist() {
-	const response = await fetch("https://example.com/fruitList");
-	const fruitList:string[] = await response.json();
-	return fruitList;
-} // we need this function to let our typescript compiler know which type of data we waits from api
+interface Car {
+	wheels: number;
+	color: string;
+}
+
+
+const car: Car = {
+	wheels: 4,
+	color: "white"
+}
+const motorcycle: {
+	wheels: number;
+	color: string;
+} = {
+	wheels: 2,
+	color: "black"
+}
