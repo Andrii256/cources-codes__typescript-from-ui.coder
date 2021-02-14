@@ -1,33 +1,19 @@
-interface Nutrient {
-	name: string;
-	value: number;
-}
-interface EdibleThing {
+interface Fruit {
 	name: string;
 	color: string;
-	calories: number;
-	nutrients: Nutrient[];
-}
-interface Fruit extends EdibleThing {
-	sweetness: number;
-}
-interface Vegetable {
-	name: string;
-	color: string;
-	calories: number;
-	nutrients: Nutrient[];
+	[huy: string]: string;
+	[chislo: number]: string;
+	[smth: boolean]: string;
 }
 
-let apple: Fruit;
-
-let fruitBasket: Fruit[] = [];
-
-const tomato = {
-	name: 'Tomato',
-	color: 'red',
-	calories: 10,
-	nutrients: [],
-	sweetness: 20
+const apple: Fruit = {
+	name: 'Apple',
+	color: 'red'
 }
 
-fruitBasket.push(tomato);
+apple.nutrient1 = '50mg';
+apple.nut2 = '20mg';
+apple[325] = 'fuck';
+apple[true] = 'yes';
+
+console.log(apple);
