@@ -11,6 +11,7 @@
     "noEmitOnError": true
   },
   "files": [
-    "./src/index.ts"
+    "./src/index.ts",
+    "./practices/interfaces.ts"
   ]
 }
